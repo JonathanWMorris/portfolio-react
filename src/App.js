@@ -1,5 +1,5 @@
 import './App.css';
-import {Switch, Route} from "react-router-dom";
+import {Route, Switch} from "react-router-dom";
 import Navigation from "./Components/Navigation";
 import Home from "./Components/Pages/Home";
 import Trippy from "./Components/Pages/Trippy";

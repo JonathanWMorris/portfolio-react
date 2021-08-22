@@ -1,5 +1,5 @@
 import React from "react";
-import {Button, Container} from "react-bootstrap";
+import {Container} from "react-bootstrap";
 import CardA from "../CardA";
 import CardB from "../CardB";
 
@@ -20,7 +20,7 @@ function Trippy() {
                    text="Click the button to download the project files for trippy!"
             />
             <div className="d-grid gap-2">
-                <button className="btn btn-outline-dark" type="button"
+                <button className="btn btn-outline-dark btn-block" type="button"
                         onClick={downloadTrippy}>
                     Download Project
                 </button>

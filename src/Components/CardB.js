@@ -3,13 +3,13 @@ import {Col, Image, Row, Container} from "react-bootstrap";
 import useWindowDimensions from "../useWindowDimensions";
 
 function CardB({imageSource, subtitle, text}) {
-    const { width } = useWindowDimensions();
+    const {width} = useWindowDimensions();
 
-    if (width > 767){
-        return(
+    if (width > 767) {
+        return (
             <Container>
-                <Row className="padded-row desktop-tablet">
-                    <Col className="summary-div">
+                <Row className="padded-row">
+                    <Col xs={12} md={8} className="summary-div">
                         <h2 className="heading">{subtitle}</h2>
                         <p className="subheading">{text}</p>
                     </Col>
@@ -19,14 +19,14 @@ function CardB({imageSource, subtitle, text}) {
                 </Row>
             </Container>
         );
-    } else{
+    } else {
         return (
             <Container>
-                <Row className="padded-row mobile">
+                <Row className="padded-row">
                     <Col xs={12} md={4} className="image-div">
                         <Image src={imageSource} className="profile-image shadow-lg"/>
                     </Col>
-                    <Col className="summary-div">
+                    <Col xs={12} md={8} className="summary-div">
                         <h2 className="heading">{subtitle}</h2>
                         <p className="subheading">{text}</p>
                     </Col>

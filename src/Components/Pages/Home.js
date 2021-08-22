@@ -2,7 +2,6 @@ import React from "react";
 import {Container} from "react-bootstrap";
 import CardA from "../CardA";
 import CardB from "../CardB";
-import Footer from "../Footer";
 
 function Home() {
     return (

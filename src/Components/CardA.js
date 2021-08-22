@@ -8,7 +8,7 @@ function CardA({imageSource, subtitle, text}) {
                 <Col xs={12} md={4} className="image-div">
                     <Image src={imageSource} className="profile-image shadow-lg"/>
                 </Col>
-                <Col className="summary-div">
+                <Col xs={12} md={8} className="summary-div">
                     <h2 className="heading">{subtitle}</h2>
                     <p className="subheading">{text}</p>
                 </Col>
