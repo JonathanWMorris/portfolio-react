@@ -1,4 +1,6 @@
 import React from "react";
+
+// Component Imports
 import {Container, Nav, Navbar} from "react-bootstrap";
 import {LinkContainer} from "react-router-bootstrap";
 
@@ -17,6 +19,9 @@ function Navigation() {
                         </LinkContainer>
                         <LinkContainer to="/trippy">
                             <Nav.Link>Trippy</Nav.Link>
+                        </LinkContainer>
+                        <LinkContainer to="/WebDevelopment">
+                            <Nav.Link>Web Development</Nav.Link>
                         </LinkContainer>
                     </Nav>
                 </Navbar.Collapse>

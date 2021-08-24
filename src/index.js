@@ -1,8 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+
+// Component Imports
 import App from './App';
+
+// React Router Imports
 import {HashRouter as Router} from 'react-router-dom';
+
+// CSS
+import './index.css';
 
 ReactDOM.render(
     <Router>

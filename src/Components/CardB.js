@@ -1,4 +1,6 @@
 import React from "react";
+
+// Component Imports
 import {Col, Image, Row, Container} from "react-bootstrap";
 import useWindowDimensions from "../useWindowDimensions";
 
