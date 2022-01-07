@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Cormorant+Garamond&family=Proza+Libre&display=swap');
 
-body{
-    min-font-size: 22px;
-}
-
 .title{
     font-family: 'Arizonia', cursive;
     text-decoration: none;
@@ -11,10 +7,6 @@ body{
     color: black;
     padding-right: 3%;
     white-space: nowrap;
-}
-
-.title:hover{
-    color: gray;
 }
 
 h1,h2,h3,h4,h5,h6{

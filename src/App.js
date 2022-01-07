@@ -6,6 +6,7 @@ import Home from "./Components/Pages/Home";
 import Trippy from "./Components/Pages/Trippy";
 import Footer from "./Components/Footer";
 import WebDevelopment from "./Components/Pages/WebDevelopment";
+import Mechanical from "./Components/Pages/Mechanical";
 
 // Router Dom Import
 import {Route, Switch} from "react-router-dom";
@@ -19,7 +20,8 @@ function App() {
             <Navigation/>
             <Switch>
                 <Route path='/trippy' component={Trippy}/>
-                <Route path='/WebDevelopment' component={WebDevelopment}/>
+                <Route path='/web-development' component={WebDevelopment}/>
+                <Route path='/mechanical' component={Mechanical}/>
                 <Route path='/' component={Home}/>
             </Switch>
             <Footer/>

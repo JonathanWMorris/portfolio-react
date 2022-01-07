@@ -1,28 +1,33 @@
 import React from "react";
 
 // Component Imports
-import {Container, Nav, Navbar} from "react-bootstrap";
-import {LinkContainer} from "react-router-bootstrap";
+import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { LinkContainer } from "react-router-bootstrap";
 
 function Navigation() {
     return (
         <Navbar bg="light" expand="md" variant="light">
             <Container>
-                <LinkContainer to="/">
-                    <Navbar.Brand bsPrefix="title">Jonathan Morris</Navbar.Brand>
-                </LinkContainer>
+                <Navbar.Brand bsPrefix="title">Jonathan Morris</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav>
                         <LinkContainer to="/">
                             <Nav.Link>Home</Nav.Link>
                         </LinkContainer>
-                        <LinkContainer to="/trippy">
-                            <Nav.Link>Trippy</Nav.Link>
-                        </LinkContainer>
-                        <LinkContainer to="/WebDevelopment">
+                        <NavDropdown title="iOS Development" id="nav-dropdown">
+                            <LinkContainer to="/trippy">
+                                <NavDropdown.Item bsPrefix="">Trippy Travel App</NavDropdown.Item>
+                            </LinkContainer>
+                        </NavDropdown>
+                        <LinkContainer to="/web-development">
                             <Nav.Link>Web Development</Nav.Link>
                         </LinkContainer>
+                        <NavDropdown title="Robotics" id="nav-dropdown">
+                        <LinkContainer to="/mechanical">
+                            <NavDropdown.Item bsPrefix="">Mechancial</NavDropdown.Item>
+                        </LinkContainer>
+                        </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
