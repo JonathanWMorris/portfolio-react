@@ -17,8 +17,8 @@ function WebDevelopment() {
             <CardA
                 imageSource={JAWLogo}
                 subtitle="JAW Non-Profit"
-                text="Designed the website for JAW (Journey Around the World) in WIX.
-                Also designed their Logo and branding in illustrator."
+                text="Helped design the website for a nonprofit in my highschool called JAW (Journey Around the World). I used WIX to build this website. 
+                I also designed their Logo and branding, which was done using Adobe Illustrator."
             />
             <LinkButton link="https://jawnonprofit.wixsite.com/jawnonprofit" text="Visit Site"/>
             <CardB
